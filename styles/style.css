@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* common style or utilities */
 body {
+  margin: 0px;
   font-family: "Poppins", sans-serif;
   background-color: #f3f1ff;
 }
@@ -109,7 +110,7 @@ hr {
 .course-duration {
   background: #ffe4e8;
   border-radius: 15.6913px;
-  color: #FF4A60;
+  color: #ff4a60;
   position: relative;
   right: 10px;
   font-size: 12px;
@@ -120,30 +121,73 @@ hr {
     Media Queries
 --------------------- */
 /* Mobile Devices */
-@media only screen and (max-width:688px) {
-    .container{
-        width: 100%;
-    }
-    .players, .blogs, .courses{
-       grid-template-columns: repeat(1, 1fr);
-    }
-    .player, .blog{
-        flex-direction: column;
-    }
-
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
 }
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-    .container{
-        width: 100%;
-    }
-    .players,  .courses{
-       grid-template-columns: repeat(2, 1fr);
-    }
-    .blogs{
-       grid-template-columns: repeat(1, 1fr);
-    }
-
-     
-    
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* --------------------
+  navigation styles
+------------------------*/
+.navigation {
+  display: flex;
+  align-items: center;
+  background-color: #562eff;
+  width: 1440px;
+  height: 94px;
+}
+.idea {
+  display: flex;
+  align-items: center;
+}
+.idea-image img {
+  padding-left: 285px;
+  width: 40px;
+  height: 51px;
+}
+.idea-text {
+  color: white;
+  font-size: 24px;
+  padding-left: 17px;
+}
+nav li {
+  list-style: none;
+  margin-right: 36px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+}
+nav ul{
+  position: relative;
+  left: 452px;
+}
+.profile-picture{
+  position: relative;
+  left: 430px;
 }
