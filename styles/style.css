@@ -1,5 +1,50 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* --------------------
+  navigation styles
+------------------------*/
+.navigation {
+  display: flex;
+  align-items: center;
+  background-color: #562eff;
+  width: 1440px;
+  height: 94px;
+}
+.idea {
+  display: flex;
+  align-items: center;
+}
+.idea-image img {
+  padding-left: 285px;
+  width: 40px;
+  height: 51px;
+}
+.idea-text {
+  color: white;
+  font-size: 24px;
+  padding-left: 17px;
+}
+nav li {
+  list-style: none;
+  margin-right: 36px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+nav ul {
+  display: flex;
+}
+nav ul {
+  position: relative;
+  left: 452px;
+}
+.profile-picture {
+  position: relative;
+  left: 430px;
+}
+
 /* common style or utilities */
 body {
   margin: 0px;
@@ -137,6 +182,7 @@ hr {
 }
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+
   .container {
     width: 100%;
   }
@@ -147,47 +193,4 @@ hr {
   .blogs {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-/* --------------------
-  navigation styles
-------------------------*/
-.navigation {
-  display: flex;
-  align-items: center;
-  background-color: #562eff;
-  width: 1440px;
-  height: 94px;
-}
-.idea {
-  display: flex;
-  align-items: center;
-}
-.idea-image img {
-  padding-left: 285px;
-  width: 40px;
-  height: 51px;
-}
-.idea-text {
-  color: white;
-  font-size: 24px;
-  padding-left: 17px;
-}
-nav li {
-  list-style: none;
-  margin-right: 36px;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-nav ul {
-  display: flex;
-}
-nav ul{
-  position: relative;
-  left: 452px;
-}
-.profile-picture{
-  position: relative;
-  left: 430px;
 }
